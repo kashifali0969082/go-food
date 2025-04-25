@@ -15,7 +15,7 @@ app.use((req, res, next) => {
 
 // connection()
 
-app.get('/', (req, res) => {
+app.get('/kashif', (req, res) => {
   res.send('Hello World!')
 })
 
