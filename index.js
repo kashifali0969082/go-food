@@ -18,7 +18,7 @@ app.use((req, res, next) => {
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
-app.get('/test',require("./Routes/test"))
+app.use('/api',require("./Routes/test"))
 app.use(express.json())
 
 // API routes
