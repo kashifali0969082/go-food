@@ -1,5 +1,5 @@
 const Order = require('../models/Orders');
-
+const router = require('./CreateUser');
 router.get('/test', async (req, res) => {
     try {
       const [rows] = await db.query('SELECT * FROM orders');
