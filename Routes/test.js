@@ -6,7 +6,7 @@ router.get('/test', async (req, res) => {
       res.status(200).json({ success: true, data: rows });
     } catch (err) {
       console.error('Error fetching orders:', err);
-      res.status(500).json({ success: false, message: 'Internal Server Error' });
+      res.status(500).json({ success: false, message: err });
     }
   });
   module.exports = router;  
